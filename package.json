@@ -8,6 +8,7 @@
     "lib/**/*"
   ],
   "scripts": {
+    "typecheck": "tsc --noEmit",
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
@@ -79,6 +80,7 @@
     "react-test-renderer": "^16.13.1",
     "typescript": "^5.2.2"
   },
+  "resolutions": { "@types/react": "^17" },
   "author": "Alexandre Zajac",
   "license": "MIT"
 }
