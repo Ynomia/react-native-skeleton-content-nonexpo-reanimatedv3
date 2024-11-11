@@ -12,7 +12,6 @@
     "build": "tsc -p tsconfig.json",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
     "lint": "eslint --fix src/**/*.{js,jsx,ts,tsx}",
-    "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
@@ -80,7 +79,9 @@
     "react-test-renderer": "^16.13.1",
     "typescript": "^5.2.2"
   },
-  "resolutions": { "@types/react": "^17" },
+  "resolutions": {
+    "@types/react": "^17"
+  },
   "author": "Alexandre Zajac",
   "license": "MIT"
 }
